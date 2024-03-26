@@ -1,0 +1,68 @@
+<header class="">
+    <div class="logo">
+        <img src="https://zaika-foods.netlify.app/logo.2d766eac.png" alt="" />
+    </div>
+
+    <ul>
+        <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href=""><i class="fa-brands fa-react"></i> About</a></li>
+        <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+        <li><a href=""><i class="fa-solid fa-user"></i> Login</a></li>
+    </ul>
+</header>
+
+<style>
+    header{
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1% 1%;
+    box-shadow: 0 0 10px 1px rgb(165, 165, 165);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logo{
+    width: 85px;
+}
+.logo img{
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+ul li::after{
+    content: "";
+    width: 0%;
+    height: 1.5px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+ul li:hover::after{
+    width: 100%;
+}
+
+ul li a{
+    color: rgb(82, 81, 81);
+    font-size: 17px;
+    text-decoration: none;
+}
+ul li:hover a{
+    color: rgb(255, 89, 0);
+}
+</style>
